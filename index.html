@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .container {
+      height: 748px;
+      width:748px;
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template-rows: 414px 130px 155px 22px;
+      grid-template-columns: 320px 198px 153px 50px;
+    }
+
+
+    .item{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:pink;
+    }
+
+
+    .white1{
+    
+        grid-column:span  3;
+      /* grid-column-start:2 ;
+      grid-column-end: -1; */
+    }
+
+    .white2{
+      grid-row:span 2;
+      /* grid-row-start:2 ;
+      grid-row-end: -2; */
+    }
+    
+    .white3{
+      
+      /* grid-column-start:2 ;
+      grid-column-end: -2;
+      grid-row-start:2 ;
+      grid-row-end: 4; */
+      grid-area: 2/2/4/4;
+    }
+
+
+    /* .white4{
+      grid-row-start:3;
+      grid-row-end: 5;
+    }
+   .blue{
+    grid-row-start:2 ;
+      grid-row-end: 3;
+   }
+   .yellow{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+   .white5 {
+     grid-row-start:4;
+      grid-row-end: -1;
+   } */
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  
+
+  <div class="container ">
+
+    <div class="item red" style="background-color: red;">hello</div>
+    <div class="item white1" style="background-color: beige;">bro</div>
+    <div class="item white2" style="background-color: beige;">kuch</div>
+    <div class="item white3" style="background-color: beige;">j</div>
+    <div class="item blue" style="background-color: blue">k</div>
+    <div class="item white4" style="background-color: beige;">k</div>
+    <div class="item white5" style="background-color: beige;">i</div>
+    <div class="item yellow" style="background-color: yellow">9</div>
+    <div class="item black" style="background-color: black;">10</div>
+
+  
+  </div>
+</body>
+
+</html>
